@@ -20,6 +20,7 @@ const a = prompt('Odin iz poslednih prosmotrennyh filmov', ''),
 
 
 personalMovieDB.movies[a] = b;
+
 personalMovieDB.movies[c] = d;
 
 
