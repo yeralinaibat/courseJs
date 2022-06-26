@@ -2,7 +2,9 @@
 
  "use strict";
 
-const numberOfFilms = prompt('skolko filmov vy posmotreli?', '');
+const numberOfFilms = +prompt('skolko filmov vy posmotreli?', '');
+
+
 
 let personalMovieDB = {
     count: numberOfFilms,
@@ -27,6 +29,17 @@ for (let i = 0; i < 2; i++){
     }
     
 }
+
+if (personalMovieDB.count <10 ){
+    console.log('Prosmotreno dovolno malo filmov');
+} else if (personalMovieDB.count >10 && personalMovieDB.count<30){
+   console.log ('Vy klassicheskii zritel');
+}else if(personalMovieDB.count >30){
+    console.log('Vy kinoman');
+}else{
+    console.log ('oshibka');
+}
+    
 
 console.log(personalMovieDB); 
 
